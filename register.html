@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | ArtGallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<section class="header register-header">
+    <header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">🎨 ArtGallery</a>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="pricing.html">PRICE</a></li>
+            <li><a href="register.html" class="active">REGISTER</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <h2 class="section-title">Book Your Visit</h2>
+    <p class="section-subtitle">Reserve your spot at The Art Gallery</p>
+</header>
+
+<!-- REGISTER FORM -->
+<section class="form-container">
+    <form action="#" method="post">
+        <!-- Personal Info -->
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password" placeholder="Min 8 characters" minlength="8" required>
+            </div>
+        </fieldset>
+
+        <!-- Visit Details -->
+        <fieldset>
+            <legend>Visit Details</legend>
+            <div class="form-group">
+                <label for="visit-date">Preferred Date:</label>
+                <input type="date" id="visit-date" name="visit-date" required>
+            </div>
+            <div class="form-group">
+                <label for="ticket-type">Ticket Type:</label>
+                <select id="ticket-type" name="ticket-type" required>
+                    <option value="">-- Please Select --</option>
+                    <option value="standard">Standard ($10)</option>
+                    <option value="student">Student ($5)</option>
+                    <option value="vip">VIP Guided Tour ($25)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p style="color:#CBD5E1; margin-bottom:8px;">Do you need a guide?</p>
+                <div class="radio-group">
+                    <input type="radio" id="guide-yes" name="guide" value="yes" required>
+                    <label for="guide-yes">Yes</label>
+                    <input type="radio" id="guide-no" name="guide" value="no">
+                    <label for="guide-no">No</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Extras -->
+        <fieldset>
+            <legend>Extras</legend>
+            <div class="checkbox-group">
+                <div>
+                    <input type="checkbox" id="brochure" name="brochure" value="yes">
+                    <label for="brochure">Send me a digital brochure</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Subscribe to the Art Gallery Newsletter</label>
+                </div>
+            </div>
+            <div class="form-group" style="margin-top:15px;">
+                <label for="message">Special Requests:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any special requests..."></textarea>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Book My Visit</button>
+    </form>
+</section>
+</section>
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>🎨 ArtGallery</h3>
+            <p>Celebrating creativity, culture, and the vibrant soul of Mogadishu.</p>
+            <div class="footer-social">
+                <a href="#">Instagram</a> | 
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Our Store</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Further Links</h4>
+            <ul>
+                <li><a href="#">Term & Condition</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Learning</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Get In Touch</h4>
+            <p>📍 Makka Al Mukarrama Road, Mogadishu, Somalia</p>
+            <p>📞 +252 61 338 0515</p>
+            <p>✉️ info@artgallery.so</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 ArtGallery. All rights reserved. | Dhammaan xuquuqaha way dhawrsan yihiin.</p>
+    </div>
+</footer>
+
+</body>
+</html>

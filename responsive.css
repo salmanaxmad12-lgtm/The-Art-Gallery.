@@ -1,0 +1,772 @@
+/*========== RESPONSIVE DESIGN ==========*/
+
+/*========== TABLETS (1024px and below) ==========*/
+@media screen and (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    justify-content: center;
+  }
+  
+  .logo {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  /* About Page Header */
+  .about-header header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  
+  .about-nav-links {
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    justify-content: center;
+  }
+  
+  .about-logo a {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  /* Home Page */
+  .art-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+  }
+  
+  /* Pricing Page */
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  /* Contact Page */
+  .contact-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*========== MOBILE LANDSCAPE & TABLETS (768px and below) ==========*/
+@media (max-width: 768px) {
+  /* ===== HEADER (All Pages) ===== */
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.8rem 1.5rem;
+    justify-content: center;
+  }
+  
+  .logo {
+    text-align: center;
+    font-size: 28px;
+  }
+  
+  /* About Page Header */
+  .about-header header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .about-nav-links {
+    flex-wrap: wrap;
+    gap: 0.8rem 1.5rem;
+    justify-content: center;
+  }
+  
+  .about-logo a {
+    text-align: center;
+    font-size: 28px;
+  }
+  
+  /* ===== HOME PAGE ===== */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    min-height: auto;
+    padding: 40px 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 40px;
+  }
+  
+  .hero-text {
+    max-width: 100%;
+  }
+  
+  .hero-video video {
+    max-width: 100%;
+  }
+  
+  .featured {
+    padding: 60px 5%;
+  }
+  
+  .featured h2 {
+    font-size: 32px;
+  }
+  
+  .art-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .why {
+    padding: 60px 5%;
+  }
+  
+  .why h2 {
+    font-size: 32px;
+  }
+  
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .cta {
+    padding: 60px 5%;
+  }
+  
+  .cta h2 {
+    font-size: 32px;
+  }
+  
+  /* ===== ABOUT PAGE ===== */
+  .about h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about .intro {
+    font-size: 1.1rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+  }
+  
+  table {
+    font-size: 0.85rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.6rem 0.4rem;
+  }
+  
+  /* ===== PRICING PAGE ===== */
+  .pricing-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    padding: 0 1rem;
+  }
+  
+  .pricing-card h3 {
+    font-size: 1rem;
+  }
+  
+  .pricing-card img {
+    height: 200px;
+  }
+  
+  .art-details p {
+    font-size: 0.9rem;
+  }
+  
+  /* ===== REGISTER PAGE ===== */
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .form-container {
+    padding: 0 1rem;
+  }
+  
+  form {
+    padding: 25px 20px;
+  }
+  
+  fieldset {
+    padding: 15px 18px;
+  }
+  
+  legend {
+    font-size: 1.1rem;
+  }
+  
+  .radio-group {
+    gap: 15px;
+  }
+  
+  /* ===== CONTACT PAGE ===== */
+  .page-title h1 {
+    font-size: 2rem;
+  }
+  
+  .page-title p {
+    font-size: 1rem;
+  }
+  
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .contact-form {
+    padding: 25px 20px;
+  }
+  
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-map {
+    padding: 25px 20px;
+  }
+  
+  .contact-map h2 {
+    font-size: 1.5rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .form-half {
+    margin-bottom: 15px;
+  }
+  
+  .contact-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .info-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .info-card p {
+    font-size: 0.9rem;
+  }
+  
+  /* ===== FOOTER ===== */
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .footer-col h3 {
+    font-size: 24px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+  }
+}
+
+/*========== MOBILE PHONES (480px and below) ==========*/
+@media (max-width: 480px) {
+  /* ===== HEADER (All Pages) ===== */
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  
+  .nav-links {
+    gap: 0.5rem 1rem;
+    justify-content: center;
+  }
+  
+  .nav-links a {
+    font-size: 13px;
+  }
+  
+  .logo {
+    font-size: 22px;
+  }
+  
+  /* About Page Header */
+  .about-header header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  
+  .about-nav-links {
+    gap: 0.5rem 1rem;
+    justify-content: center;
+  }
+  
+  .about-nav-links li a {
+    font-size: 13px;
+  }
+  
+  .about-logo a {
+    font-size: 22px;
+  }
+  
+  /* ===== HOME PAGE ===== */
+  .hero-content h1 {
+    font-size: 28px;
+  }
+  
+  .hero-text {
+    font-size: 16px;
+  }
+  
+  .hero-btns {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .btn {
+    text-align: center;
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+  
+  .btn2 {
+    text-align: center;
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+  
+  .featured {
+    padding: 40px 5%;
+  }
+  
+  .featured h2 {
+    font-size: 26px;
+  }
+  
+  .featured>p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .art-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .art-card img {
+    height: 220px;
+  }
+  
+  .art-card h3 {
+    font-size: 20px;
+  }
+  
+  .art-card p {
+    font-size: 14px;
+  }
+  
+  .why {
+    padding: 40px 5%;
+  }
+  
+  .why h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  
+  .why-card {
+    padding: 25px 20px;
+  }
+  
+  .why-card h3 {
+    font-size: 18px;
+  }
+  
+  .why-card p {
+    font-size: 14px;
+  }
+  
+  .cta {
+    padding: 40px 5%;
+  }
+  
+  .cta h2 {
+    font-size: 26px;
+  }
+  
+  .cta p {
+    font-size: 14px;
+  }
+  
+  /* ===== ABOUT PAGE ===== */
+  .about {
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+  }
+  
+  .about h1 {
+    font-size: 2rem;
+    padding-left: 0.8rem;
+    border-left-width: 4px;
+  }
+  
+  .about .intro {
+    font-size: 1rem;
+    padding-left: 1rem;
+    border-left-width: 2px;
+  }
+  
+  .card {
+    padding: 1.2rem;
+  }
+  
+  .card h2 {
+    font-size: 1.3rem;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  table {
+    font-size: 0.7rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.4rem 0.3rem;
+  }
+  
+  .card ul li {
+    font-size: 0.9rem;
+    padding: 0.4rem 0;
+  }
+  
+  /* ===== PRICING PAGE ===== */
+  .pricing-header {
+    padding: 15px 5% !important;
+  }
+  
+  .pricing-header h2 {
+    font-size: 1.4rem;
+    margin: 10px 0 0;
+  }
+  
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 0.8rem;
+    margin: 20px auto;
+  }
+  
+  .pricing-card h3 {
+    font-size: 1.1rem;
+    padding: 12px 10px 6px;
+  }
+  
+  .pricing-card img {
+    height: 220px;
+  }
+  
+  .art-details {
+    padding: 10px 15px 14px;
+  }
+  
+  .art-details p {
+    font-size: 0.9rem;
+    margin: 3px 0;
+  }
+  
+  /* ===== REGISTER PAGE ===== */
+  .register-header {
+    padding: 15px 5% !important;
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
+    margin: 10px 0 3px;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+    margin: 0 0 5px;
+  }
+  
+  .form-container {
+    padding: 0 0.8rem;
+    margin: 15px auto;
+  }
+  
+  form {
+    padding: 20px 15px;
+  }
+  
+  fieldset {
+    padding: 12px 14px;
+    margin-bottom: 18px;
+  }
+  
+  legend {
+    font-size: 1rem;
+    padding: 0 8px;
+  }
+  
+  .form-group {
+    margin-bottom: 14px;
+  }
+  
+  .form-group label {
+    font-size: 0.85rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .radio-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .checkbox-group {
+    gap: 8px;
+  }
+  
+  .checkbox-group label {
+    font-size: 0.85rem;
+  }
+  
+  .submit-btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  
+  /* ===== CONTACT PAGE ===== */
+  .contact-header {
+    padding: 15px 5% !important;
+  }
+  
+  .page-title {
+    padding: 20px 0 5px;
+  }
+  
+  .page-title h1 {
+    font-size: 1.6rem;
+  }
+  
+  .page-title p {
+    font-size: 0.9rem;
+  }
+  
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0 0.8rem;
+    margin: 15px auto;
+  }
+  
+  .info-card {
+    padding: 15px;
+  }
+  
+  .info-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .info-card p {
+    font-size: 0.9rem;
+  }
+  
+  .contact-wrapper {
+    padding: 0 0.8rem;
+    margin: 20px auto;
+  }
+  
+  .contact-form {
+    padding: 20px 15px;
+  }
+  
+  .contact-form h2 {
+    font-size: 1.4rem;
+  }
+  
+  .contact-form p {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-map {
+    padding: 20px 15px;
+  }
+  
+  .contact-map h2 {
+    font-size: 1.4rem;
+  }
+  
+  .form-half label,
+  .contact-form .form-group label {
+    font-size: 0.85rem;
+  }
+  
+  .form-half input,
+  .contact-form .form-group input,
+  .contact-form .form-group select,
+  .contact-form .form-group textarea {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .contact-form .form-group textarea {
+    min-height: 80px;
+  }
+  
+  .contact-form .submit-btn {
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  
+  .contact-map iframe {
+    height: 200px;
+  }
+  
+  .contact-map p {
+    font-size: 0.85rem;
+    margin: 8px 0 0;
+  }
+  
+  /* ===== FOOTER ===== */
+  footer {
+    padding: 30px 5% 15px;
+    margin-top: 20px;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .footer-col h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-col h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-col p {
+    font-size: 0.85rem;
+  }
+  
+  .footer-col a {
+    font-size: 0.85rem;
+  }
+  
+  .footer-col li {
+    margin-bottom: 6px;
+  }
+  
+  .footer-social a {
+    font-size: 0.85rem;
+  }
+  
+  .footer-bottom {
+    padding-top: 15px;
+    font-size: 0.8rem;
+  }
+}
+
+/*========== EXTRA SMALL (360px and below) ==========*/
+@media (max-width: 360px) {
+  .nav-links a {
+    font-size: 11px;
+  }
+  
+  .about-nav-links li a {
+    font-size: 11px;
+  }
+  
+  .hero-content h1 {
+    font-size: 24px;
+  }
+  
+  .btn,
+  .btn2 {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  
+  .pricing-card h3 {
+    font-size: 0.95rem;
+  }
+  
+  .pricing-card img {
+    height: 180px;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+  }
+  
+  .page-title h1 {
+    font-size: 1.3rem;
+  }
+  
+  .footer-col h3 {
+    font-size: 20px;
+  }
+}
